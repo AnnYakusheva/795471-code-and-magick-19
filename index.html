@@ -191,14 +191,14 @@
 		return 1.337*wizardWidth;
 	};
 	var getWizardX = function(width) {
-		if (width === 0) {
-			return width;
-		} 
+		if (width !== 0) {
+			width = width-wizardWidth;
+		}
 		return width/2;
 	};
 	var getWizardY = function(height) {
-		if (height === 0) {
-			return height; 
+		if (height !== 0) {
+			return height;
 		}
 		return height*2/3;
 	};
